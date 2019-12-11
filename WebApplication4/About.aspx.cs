@@ -11,7 +11,13 @@ namespace WebApplication4
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        protected void ddlStudents_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ddlBooks.Items.Clear();
+            ddlBooks.Items.Add(ddlStudents.SelectedItem);
         }
     }
 }
